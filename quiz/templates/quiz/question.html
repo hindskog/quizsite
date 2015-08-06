@@ -3,28 +3,25 @@
 	<head>
 		<title>puppy love</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="static/normalize.css">
-		<link rel="stylesheet" href="static/style.css">
+		<link rel="stylesheet" href="/static/normalize.css">
+		<link rel="stylesheet" href="/static/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
-		<h1>{{ question_number }}. {{ question }}</h1>
-		<p>{{ answer1 }}</p>
-		<p>{{ answer2 }}</p>
-		<p>{{ answer3 }}</p>
-		
+	<body>	
 		<div class="wrapper_upper">
 			<h1>Name that puppy</h1>
-			<p> Challange your puppy skills in this advanced test. </p>
+			<img src="/static/maddie.jpeg" class= "circular" alt="dog" />
 		</div>
 		<div class="wrapper_downer">
-			<div class="top_left">
+			<div class="box">
+				<div class="answer_button_div">
+					<a href="{% url "question_page" 2 %}" class="answer_button">Maddie</a>
+				</div>
 			</div>
-			<div class="top_right">
-			</div>
-			<div class="bottom_left">
-			</div>
-			<div class="bottom_right">
+			<div class="box">
+				<div class="answer_button_div">
+					<a href="{% url "question_page" 2 %}" class="answer_button">Cleo</a>
+				</div>
 			</div>
 		</div>
 	</body>

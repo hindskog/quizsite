@@ -20,7 +20,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url("^$", views.startpage),
-	url(r"^quiz/([a-z-])+/question/([0-9])/$", views.question),
-	url(r"^quiz/([a-z]+)/completed/$", views.completed),
+    url(r"^$", views.startpage, name = "startpage"),
+	url(r"^question/([0-9]+)/$", views.question, name = "question_page"),
+	url(r"/completed/$", views.completed, name = "completed_page"),
 ]
