@@ -1,0 +1,77 @@
+html, body, .container {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: -webkit-linear-gradient(top, #F54588 0%, #4f20d3 50%, #F54588 100%) repeat;
+    -webkit-animation-name: masked-animation;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@font-face {
+  font-family: 'helsinkiregular';
+  src: url('../fonts/helsinki-webfont.eot');
+  src: url('../fonts/helsinki-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helsinki-webfont.woff') format('woff'), url('../fonts/helsinki-webfont.ttf') format('truetype'), url('../fonts/helsinki-webfont.svg#helsinkiregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+	margin: auto;
+	width: 900px;
+}
+
+.wrapper_upper {
+	margin: auto;
+	width: 100%;
+	height: 400px;
+}
+
+.wrapper_downer {
+	margin: auto;
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	display: table;
+}
+
+.button {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: black;
+	font-weight: 700;
+	font-size: 15px;
+	border-radius: 300px;
+	background-color: white;
+	padding: 21px 34px;
+	text-decoration: none;
+}
+
+.button_div {
+	display: block;
+	cursor: pointer;
+	width: 200px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+.top_left{
+	border-right: 
+}
+
+
+h1 {
+	text-align: center;
+	color: white;
+	font-family: 'helsinkiregular';
+	font-size: 50px;
+	padding-top: 60px;
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+}
