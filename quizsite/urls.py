@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url("^$", views.startpage),
 	url(r"^quiz/([a-z-])+/question/([0-9])/$", views.question),
-	url(r"^quiz/[a-z]+/completed/$", views.completed),
+	url(r"^quiz/([a-z]+)/completed/$", views.completed),
 ]
