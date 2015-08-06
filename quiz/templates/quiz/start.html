@@ -8,6 +8,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		{% for quiz_slug, quiz in quizzes.items %}
+	<p>{{ quiz.name }}</p>{% endfor %}
+
 		<div class="wrapper">
 			<h1>Name that puppy</h1>
 			<p> Challange your puppy skills in this advanced test. </p>
