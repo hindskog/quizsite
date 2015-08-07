@@ -13,16 +13,22 @@
 			<img src="/static/maddie.jpeg" class= "circular" alt="dog" />
 		</div>
 		<div class="wrapper_downer">
-			<div class="box">
-				<div class="answer_button_div">
-					<a href="{% url "question_page" 2 %}" class="answer_button">Maddie</a>
+				<div class="box">
+					<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
+					<div class="answer_button_div">
+						<input type="hidden" name="answer" value="1">
+						<button type="submit" class="answer_button">{{ answer1 }}</button>
+			</form>
+					</div>
 				</div>
-			</div>
-			<div class="box">
-				<div class="answer_button_div">
-					<a href="{% url "question_page" 2 %}" class="answer_button">Cleo</a>
+				<div class="box">
+					<div class="answer_button_div bottom_answer">
+					<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
+							<input type="hidden" name="answer" value="2">
+						<button type="submit" class="answer_button">{{ answer2 }}</button>
+					</form>
+					</div>
 				</div>
-			</div>
 		</div>
 	</body>
 </html>

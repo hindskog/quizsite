@@ -17,10 +17,14 @@ from django.conf.urls import include, url
 from django.conf.urls import url
 from quiz import views
 from django.contrib import admin
+from django.contrib import admin
+from django.conf.urls import include
+
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r"^$", views.startpage, name = "startpage"),
-	url(r"^question/([0-9]+)/$", views.question, name = "question_page"),
-	url(r"/completed/$", views.completed, name = "completed_page"),
+	url(r"^([a-z]+)/question/([0-9]+)/$", views.question, name = "question_page"),
+	url(r"^([a-z]+)/completed/$", views.completed, name = "completed_page"),
+	url(r'^admin/', include(admin.site.urls)),
 ]
