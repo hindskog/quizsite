@@ -14,19 +14,19 @@
 		</div>
 		<div class="wrapper_downer">
 				<div class="box">
-					<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
 					<div class="answer_button_div">
-						<input type="hidden" name="answer" value="1">
-						<button type="submit" class="answer_button">{{ answer1 }}</button>
-			</form>
+						<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
+							<input type="hidden" name="answer" value="1">
+							<button type="submit" class="answer_button">{{ answer1 }}</button>
+						</form>
 					</div>
 				</div>
 				<div class="box">
-					<div class="answer_button_div bottom_answer">
-					<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
+					<div class="answer_button_div">
+						<form action="{% url "question_page" quiz.name question_number %}" method="post">{% csrf_token %}
 							<input type="hidden" name="answer" value="2">
-						<button type="submit" class="answer_button">{{ answer2 }}</button>
-					</form>
+							<button type="submit" class="answer_button">{{ answer2 }}</button>
+						</form>
 					</div>
 				</div>
 		</div>
