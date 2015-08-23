@@ -213,6 +213,16 @@ html, body, .container {
 	}
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio : 2) {
+	.wrapper_upper{
+		height: 28%;
+	}
+
+	.wrapper_downer{
+		height: 72%;
+	}
+}
+
 
 /* Iphone 6 ------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
@@ -227,7 +237,7 @@ html, body, .container {
 			}
 
 	.wrapper_upper{
-		height: 25%;
+		height: 28%;
 	}
 
 	.wrapper_downer{
